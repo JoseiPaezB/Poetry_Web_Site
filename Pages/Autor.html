@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdeba">
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="/Pages/hormiguero.html" onclick="preventCollapse(event)"
+              >Hormiguero</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Pages/Autor.html" onclick="preventCollapse(event)"
+              >Autor</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Pages/Contactar.html" onclick="preventCollapse(event)"
+              >Contactar</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="options">
+      <br />
+      <div class="containere">
+        <h3 class="titulos titulos-poema autor">Jose Ignacio Paez</h3>
+        <div class="poem">
+          <p class="cantidad poem2 biografia">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga,
+            aliquam aliquid! Atque error molestiae ipsa quisquam reiciendis amet
+            quibusdam soluta placeat sequi recusandae distinctio ab officia
+            temporibus repellendus sunt ducimus unde illo tempora maxime,
+            assumenda dolor omnis. Ullam incidunt minus aperiam, laboriosam ex
+            mollitia distinctio. Explicabo blanditiis facere doloribus
+            praesentium sequi! Deserunt incidunt ratione repellat ipsa magnam
+            ducimus quaerat quas exercitationem vitae quasi earum sed pariatur
+            provident laudantium adipisci consectetur, cupiditate velit
+            excepturi similique iure atque praesentium ut! Aperiam est
+            repudiandae consectetur cumque deleniti in dignissimos consequatur
+            corrupti voluptatibus expedita molestiae labore, quibusdam, ipsum
+            recusandae ratione optio eum accusantium quisquam sed, laudantium
+            odio. Reprehenderit officia accusamus temporibus rem rerum suscipit
+            necessitatibus inventore, libero ullam cumque ipsa voluptatum saepe
+            voluptates, laudantium sint voluptas totam laborum dolore, veniam
+            sunt. Quae officia perspiciatis quibusdam numquam vitae placeat
+            earum, ipsam facere eius iste. Repellendus natus est commodi nobis
+            eius nemo quibusdam consequatur ipsa? Sapiente tenetur eligendi
+            unde. Tempora dicta maiores, atque placeat voluptate recusandae
+            possimus rerum quod molestias unde numquam, harum provident quas
+            corporis itaque. Corporis nobis error doloremque earum dolorem
+            voluptatem provident temporibus repudiandae fuga. Natus, illo quidem
+            tempora ut velit esse maxime. Rem laborum sint natus alias aperiam
+            tempora hic inventore saepe.
+          </p>
+        </div>
+      </div>
+      <br />
+      <a href="/Pages/poemarios/Poema.html">
+        <button class="button">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+      </a>
+    </section>
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>

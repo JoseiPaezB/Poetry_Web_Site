@@ -1,0 +1,355 @@
+body{
+    font-size:2.4rem;
+    background:#fff;
+    font-family: "JetBrains Mono", monospace;
+    
+    
+    
+}
+
+.hormiguero{
+    justify-content: center;
+    display:flex; 
+    align-content:center;
+}
+
+.poema{
+    margin-top:7rem; 
+    justify-content: center;
+    display:flex; 
+    align-content:center;
+    border:2px solid #000;
+    width:50%; 
+    height:60vh; 
+}
+.first-res{
+    margin-top:5rem; 
+    height:70% !important;  
+    
+}.titulos-populares{
+    padding-right:2rem!important; 
+    padding-left:2rem;
+}
+
+.carousel{
+    
+    background:#fff; 
+    height:55vh; 
+    width:75%; 
+}
+.carousel-item h2,p{
+    margin-top:12rem; 
+   align-content:center;  
+    justify-content:center;
+    color:#000; 
+    display: flex;
+}
+.container{
+    max-width:1140px; 
+    margin: 0 auto; 
+    overflow:hidden; 
+   
+}
+.list{
+    list-style:none; 
+    padding-left:0;
+   
+    
+}
+
+.nav{
+    color:#000; 
+    display:flex;
+    justify-content:space-between; 
+    flex-wrap:wrap; 
+    padding:0 1rem; 
+    align-items:center; 
+    
+}
+
+.nav__list{
+    width:100%; 
+    margin:0; 
+    justify-content: center;
+    display:flex;
+
+
+}.list {
+    text-decoration: none;
+    font-size:1.2rem; 
+}
+
+.nav__item{
+    padding:0.5em 2rem; 
+    
+
+}
+
+.nav__item >a{
+    color:#000; 
+    transition:color .3s; 
+}
+
+.nav__item >a:hover{
+    color:#4f4545; 
+}
+
+.nav__toggler{
+  
+   transition:box-shadow .15s; 
+   cursor:pointer; 
+   margin-top:5rem; 
+}
+
+.nav.collapsible--expanded .nav__toggler{
+    opacity:1; 
+    
+} 
+
+.nav__brand{
+     
+    transform:translateY(5px); 
+}
+.headertest{
+    background:#fff;
+    position:fixed; 
+    z-index: 100;
+    width:100%; 
+    margin-top:-2rem; 
+    margin-bottom:1rem; 
+}
+@media screen and (min-width:768px){
+    .nav__toggler{
+        display:none; 
+    }
+    .nav__list {
+        width:auto; 
+        display:flex;
+        
+        max-height:100%; 
+        opacity:1;
+        
+
+    }
+    .nav__item{
+        border:0; 
+        
+    }.collapsible{
+        pointer-events: none;
+       
+        
+    }.collapsible a{
+        pointer-events:all;
+        font-size:2rem ;     
+    }.grid-item2:hover{
+        transform:scale(1.2)
+        
+    }.grid-item2 h2:hover{
+        color:#675757;
+    }
+    .headertest{
+        background:#fff;
+        position:fixed; 
+        z-index: 100;
+        width:100%; 
+        margin-top:2rem; 
+        margin-bottom:1rem; 
+    }.grid-item2-first{
+        margin-top:5rem; 
+    }.first-res{
+        height:100%; 
+    }
+    
+}
+
+.icon{
+    width:5rem; 
+    height:40px;
+}
+.icon--primary{
+    fill:var(--color-primary);
+}
+
+.icon--small{
+    width:30px; 
+    height:30px; 
+}
+
+.icon--white{
+    fill:black;
+}
+
+.icon-container{
+    margin-top:-10rem;
+    width:64px; 
+    height:64px; 
+    border-radius:100%; 
+    display:inline-flex;
+    justify-content:center; 
+    align-items:center; 
+    gap:4rem; 
+    
+}
+.autor{
+    padding-left:0 !important; 
+}@media screen and (min-width:768px){
+    .biografia{
+        font-size:1.5rem !important; 
+        max-width:75ch; 
+    }
+}
+.biografia{
+    max-width:50ch; 
+}.contacto p{
+    display:flow; 
+}
+.icon-container--accent{
+    background:var(--color-accent);
+}
+.contactarme{
+    min-height:100vh; 
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items:center;
+    gap:5rem; 
+  }
+.grid-item2{
+    justify-content: center;
+    align-content:center;
+   
+    height:100%; 
+    
+}
+.options{
+    margin-top:-3rem;
+    justify-content:center; 
+}.button-contact{
+    margin-top:20rem !important; 
+}
+.poemass{
+    margin-top:5rem; 
+    justify-content: center;
+    align-content:center;
+    border-right: 2px solid #000;
+    border-bottom: 3.5px solid #000;
+    border-top: 2px solid #000;
+    border-left: 7px solid #000;
+    
+    overflow: hidden;
+    text-align: center;
+    height:100%;
+    width:100%; 
+   
+    
+   
+}.cantidad{
+    margin-top:0rem; 
+    font-size: 1rem ;
+    color:#0b0b0b;
+    padding-left:3rem; 
+    padding-right:2rem; 
+}.titulos{
+    font-size: 1rem ;
+    
+    padding-right: 1rem;
+    color:#000;
+}.titulos:hover{
+    color:#464040;
+}.titulos-main{
+    align-content:center;
+    display: flex;
+    gap:1rem; 
+    margin-top:5rem; 
+    font-size:1.5rem; 
+}
+.poemass img{
+    width:100%; 
+    max-width:150px; 
+    max-height:300px; 
+    height:100%; 
+    object-fit:cover; 
+    
+}
+@media screen and (min-width:768px){
+    .poemass{
+        height:50vh; 
+        width:35vh; 
+        place-content: center;
+        border-right: 3px solid #000;
+        border-bottom: 5px solid #000;
+        border-top: 3px solid #000;
+        border-left: 10px solid #000;
+        
+    }.grid-container2{
+        gap:7rem; 
+    }.titulos{
+        font-size: 3rem ;
+    }.cantidad{
+        font-size: 2.5rem ;
+    }.poemass img{
+        width:100%; 
+        max-width:100%; 
+        max-height: 100%;
+        height:100%; 
+        object-fit:cover; 
+    
+    }.titulos-main{
+        margin-top:-0.5rem; 
+    }.titulos-special{
+        margin-top:3.3rem; 
+        font-size:2.5rem; 
+    
+      }
+}
+.scroller {
+    --scrollbar-color-thumb: hotpink;
+    --scrollbar-color-track: blue;
+    --scrollbar-width: thin;
+    --scrollbar-width-legacy: 0.5rem;
+  }
+
+.containere{
+    margin-top:1rem; 
+    justify-content: left;
+    
+   
+   
+    
+}
+.titulos-poema{
+        margin-top:3.3rem; 
+        padding-left:9.3rem; 
+        margin-bottom:2rem; 
+        font-weight:600; 
+    
+}.poem2{
+
+    font-family:"JetBrains Mono", monospace;
+    padding-left:0 !important;
+}.poem{
+    justify-content: left;
+}@media screen and (min-width:768px){
+    .titulos-poema{
+        margin-top:5rem; 
+        padding-left:23rem; 
+        margin-bottom:4rem; 
+        font-weight:600; 
+    }
+}
+.button{
+    background:#fff; 
+    border:transparent; 
+    color:#000; 
+    
+}
+
+.button:hover{
+    
+    color:#434040;     
+    cursor:pointer; 
+    transform:scale(1.2)
+}
