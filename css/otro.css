@@ -6,7 +6,112 @@ body{
     
     
 }
+.input-type{
+    font-size:1rem !important; 
+    font-family:  "JetBrains Mono", monospace !important;
+    display:block !important; 
+    width:100%  !important; 
+    margin-top:3rem !important; 
+    border-radius:0% !important; 
+    border:0 !important; 
+    border-bottom:1px solid #000 !important;
+    background:transparent !important; 
+    color:#000 !important;
 
+}.input-type::placeholder{
+    font-family:  "JetBrains Mono", monospace !important;
+    font-size:0.9rem !important;
+    width:100% !important; 
+    color:#000 !important;
+}.input-type:focus{
+    outline:none !important; 
+    border-bottom:2px solid #000 !important; 
+}.input-type:focus::placeholder{
+    font-weight:600 !important;  
+    color:#000 !important;
+}
+.popup{
+    width:50%; 
+    border-radius: 6px; 
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    text-align:center; 
+    padding:0 5rem 5rem; 
+    color:#000; 
+    visibility: hidden;
+    transition:transform 0.4s , top 0.4s;
+    background:#fff; 
+    border:1px solid #000; 
+    background:url(/images/hormigas.gif);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.titulo-form,.cantidad-form{
+    padding:0 !important; 
+}
+.popup2{
+    width:50%; 
+    border-radius: 6px; 
+    position:absolute; 
+    top:50%; 
+    left:50%;
+    transform:translate(-50%,-50%) ;
+    text-align:center; 
+    padding:0 5rem 5rem; 
+    color:#000; 
+    visibility: hidden;
+    transition:transform 0.4s , top 0.4s;
+    background:#fff; 
+    border:1px solid #000; 
+    background:url(/images/hormigas.gif);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+.open-popup{
+    visibility: visible;
+    top:50%; 
+    transform:translate(-50%,-50%) scale(1);
+}.open-popup2{
+    visibility: visible;
+    top:50%; 
+    transform:translate(-50%,-50%) scale(1);
+}
+.button{
+    background:#fff; 
+    border:transparent; 
+    color:#000; 
+   margin-left:-.3rem; 
+   font-family: inherit;
+    font-size:1rem; 
+    cursor:pointer; 
+    border:1px solid #000; 
+    border-radius:6px; 
+    margin-top:2rem; 
+}.button:hover{
+    background:#000
+}.button:hover *{
+    color:#fff; 
+}
+
+
+
+
+.drawing{
+    width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    position:fixed; 
+    z-index:-1; 
+    top:0; 
+    left:0; 
+    opacity:0.5; 
+}
 .hormiguero{
     justify-content: center;
     display:flex; 
@@ -16,26 +121,28 @@ body{
 .poema{
     margin-top:7rem; 
     justify-content: center;
-    display:flex; 
+   
     align-content:center;
-    border:2px solid #000;
+    
     width:50%; 
     height:60vh; 
 }
 .first-res{
     margin-top:5rem; 
-    height:70% !important;  
+    height:80% !important;  
     
 }.titulos-populares{
     padding-right:2rem!important; 
     padding-left:2rem;
 }
-
+.carousel-indicators{
+    position:fixed !important;
+}
 .carousel{
     
     background:#fff; 
-    height:55vh; 
-    width:75%; 
+    height:50%; 
+    width:100%; 
 }
 .carousel-item h2,p{
     margin-top:12rem; 
@@ -142,10 +249,8 @@ body{
         pointer-events:all;
         font-size:2rem ;     
     }.grid-item2:hover{
-        transform:scale(1.2)
+        transform:scale(1.2) !important; 
         
-    }.grid-item2 h2:hover{
-        color:#675757;
     }
     .headertest{
         background:#fff;
@@ -158,9 +263,42 @@ body{
         margin-top:5rem; 
     }.first-res{
         height:100%; 
+    }.historia-detras{
+        font-size:1.5rem !important; 
+       margin-left:-14rem !important; 
+    }.historia-detras-imagen{
+        margin-top:-11rem !important; 
+        margin-left:-7.5rem !important; 
+        font-size:1.5rem; 
     }
-    
+
 }
+.titulos-populares,.cantidad,.imagenes { 
+    opacity:1; 
+    transition: opacity 0.5s ease; /* Agrega una transición suave */ 
+}.grid-item2:hover .titulos-populares,.grid-item2:hover .cantidad,.grid-item2:hover .imagenes{
+    opacity: 0;
+}.historia-detras{
+    opacity:0; 
+}.grid-item2:hover .historia-detras{
+    opacity:1 !important; 
+}
+.historia-detras{
+    padding-left:0; 
+    font-size:0.7rem; 
+    text-align:left; 
+    margin-left:-3.5rem; 
+    margin-right:1rem; 
+    font-family: inherit;
+}.historia-detras-imagen{
+    margin-top:-7.6rem; 
+    font-size:1rem; 
+}
+
+
+
+
+/* jQuery enabled behavior for mobile */
 
 .icon{
     width:5rem; 
@@ -223,6 +361,11 @@ body{
    
     height:100%; 
     
+}
+
+
+.poemass-carrusel{
+    margin-top:0rem !important; 
 }
 .options{
     margin-top:-3rem;

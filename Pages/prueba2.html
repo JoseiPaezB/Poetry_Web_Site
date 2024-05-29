@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadatos, títulos, enlaces a CSS, etc. -->
+</head>
+<body>
+    <!-- Tu contenido HTML actual -->
+
+    <section class="options">
+        <div class="grid-container2" id="gridContainer">
+            <div class="grid-container2">
+                <div class="first-res grid-item2 grid-item2-first">
+                  <div class="poemass">
+                    <a href="/Pages/poemarios/Poema.html">
+                      <h2 class="titulos titulos-populares">HORMIGA</h2>
+                      <p class="cantidad">3 poemas</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="first-res grid-item2 grid-item2-first">
+                  <div class="poemass">
+                    <a href="/Pages/otra.html">
+                      <h2 class="titulos titulos-populares">Res</h2>
+                      <p class="cantidad">3 poemas</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item2">
+                  <div class="poemass">
+                    <a href="/Pages/otra.html">
+                      <h2 class="titulos titulos-populares">Res</h2>
+                      <p class="cantidad">3 poemas</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="grid-item2">
+                  <div class="poemass">
+                    <a href="/Pages/otra.html">
+                      <h2 class="titulos titulos-populares">Res</h2>
+                      <p class="cantidad">3 poemas</p>
+                    </a>
+                  </div>
+                </div>
+        </div>
+        <div class="navigation-buttons">
+            <button onclick="previousItems()">Previous</button>
+            <button onclick="nextItems()">Next</button>
+        </div>
+    </section>
+
+    <section class="options" id="secondSection" style="display: none;">
+        <div class="grid-container2" id="secondGridContainer">
+            <div class="grid-item2">
+                <div class="poemass">
+                  <a href="/Pages/otra.html">
+                    <h2 class="titulos titulos-populares">Res</h2>
+                    <p class="cantidad">3 poemas</p>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-item2">
+                <div class="poemass">
+                  <a href="/Pages/otra.html">
+                    <h2 class="titulos">Res</h2>
+                    <p class="cantidad">3 poemas</p>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-item2">
+                <div class="poemass">
+                  <a href="/Pages/otra.html">
+                    <h2 class="titulos titulos-populares">Res</h2>
+                    <p class="cantidad">3 poemas</p>
+                  </a>
+                </div>
+              </div>
+              <div class="grid-item2">
+                <div class="poemass">
+                  <a href="/Pages/otra.html">
+                    <h2 class="titulos titulos-populares">Res</h2>
+                    <p class="cantidad">3 poemas</p>
+                  </a>
+                </div>
+              </div>
+        </div>
+        <div class="navigation-buttons">
+            <button onclick="previousItemsInSecondSection()">Previous</button>
+            <button onclick="nextItemsInSecondSection()">Next</button>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script>
+        let currentIndex = 0;
+        let currentIndexSecondSection = 0;
+        const itemsPerPage = 4;
+        const gridContainer = document.getElementById('gridContainer');
+        const gridItems = Array.from(gridContainer.getElementsByClassName('grid-item2'));
+        const secondGridContainer = document.getElementById('secondGridContainer');
+        const secondGridItems = Array.from(secondGridContainer.getElementsByClassName('grid-item2'));
+
+        function showItems(startIndex, endIndex, gridItems) {
+            gridItems.forEach((item, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function nextItems() {
+            const nextIndex = currentIndex + itemsPerPage;
+            if (nextIndex < gridItems.length) {
+                currentIndex = nextIndex;
+                showItems(currentIndex, currentIndex + itemsPerPage, gridItems);
+            } else {
+                // Ocultar la primera sección y mostrar la segunda
+                document.getElementById('secondSection').style.display = 'block';
+                showItems(currentIndexSecondSection, currentIndexSecondSection + itemsPerPage, secondGridItems);
+            }
+        }
+
+        function previousItems() {
+            const previousIndex = currentIndex - itemsPerPage;
+            if (previousIndex >= 0) {
+                currentIndex = previousIndex;
+                showItems(currentIndex, currentIndex + itemsPerPage, gridItems);
+            }
+        }
+
+        function nextItemsInSecondSection() {
+            const nextIndex = currentIndexSecondSection + itemsPerPage;
+            if (nextIndex < secondGridItems.length) {
+                currentIndexSecondSection = nextIndex;
+                showItems(currentIndexSecondSection, currentIndexSecondSection + itemsPerPage, secondGridItems);
+            }
+        }
+
+        function previousItemsInSecondSection() {
+            const previousIndex = currentIndexSecondSection - itemsPerPage;
+            if (previousIndex >= 0) {
+                currentIndexSecondSection = previousIndex;
+                showItems(currentIndexSecondSection, currentIndexSecondSection + itemsPerPage, secondGridItems);
+            } else {
+                // Ocultar la segunda sección y volver a la primera
+                document.getElementById('secondSection').style.display = 'none';
+                showItems(currentIndex, currentIndex + itemsPerPage, gridItems);
+            }
+        }
+
+        // Mostrar los primeros elementos al cargar la página
+        window.onload = function() {
+            showItems(currentIndex, currentIndex + itemsPerPage, gridItems);
+        };
+    </script>
+</body>
+</html>

@@ -26,19 +26,9 @@
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="nav__item">
-            <a href="/Pages/hormiguero.html" onclick="preventCollapse(event)"
-              >Hormiguero</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="/Pages/Autor.html" onclick="preventCollapse(event)"
-              >Autor</a
-            >
-          </li>
-          <li class="nav__item">
-            <a href="/Pages/Contactar.html" onclick="preventCollapse(event)"
-              >Contactar</a
-            >
+            <a href="#" class="popup-link" onclick="openPopup()">
+              Hormiguear Poema
+            </a>
           </li>
         </ul>
       </nav>
@@ -122,6 +112,25 @@
           >
         </div>
       </div>
+      <div class="popup" id="popup">
+        <input
+          class="input-type"
+          id="nameInput"
+          type="name"
+          required
+          placeholder="Digita tu nombre"
+        />
+        <button class="button" id="button" onclick="openPopup2()">
+          Hormiguear Poema
+        </button>
+      </div>
+      <div class="popup2" id="popup2">
+        <h2 class="titulos titulo-form">Gracias</h2>
+        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
+        <button class="button" id="button" onclick="closePopup2()">
+          Salir
+        </button>
+      </div>
       <br />
       <a href="/Pages/poemarios/Poema.html">
         <button class="button">
@@ -133,6 +142,32 @@
         </button>
       </a>
     </section>
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        // Obtiene el valor del input
+        let nameInput = document.getElementById("nameInput").value;
+
+        // Verifica si el input está vacío
+        if (nameInput.trim() === "") {
+          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
+          alert("Por favor, ingresa tu nombre.");
+        } else {
+          // Si no está vacío, continúa con la acción
+          popup2.classList.add("open-popup2");
+        }
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup2");
+        popup.classList.remove("open-popup");
+      }
+    </script>
+
     <script src="/js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
