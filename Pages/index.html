@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="/css/test.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdebadeba">
+    <header class="headertest headertest-2">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list nav__list__2 collapsible__content">
+          <li class="nav__item">
+            <a href="/Pages/hormiguero.html" onclick="preventCollapse(event)"
+              >Hormiguero</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Pages/Autor.html" onclick="preventCollapse(event)"
+              >Autor</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Pages/Contactar.html" onclick="preventCollapse(event)"
+              >Contactar</a
+            >
+          </li>
+          
+        </ul>
+      </nav>
+    </header>
+  </br>
+  <section class="news">
+    <div class="new-content"><h2 class="titulos  titulo-nuevos">Poemas Nuevos</h2></div>
+  </section>
+    <section class="container3">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div id="slide-1" class="card active card1" data-aos="fade-up">
+            <a href="/Pages/poemas/Sangre y amor.html">
+              <h1 class="titulos-portada titulos" data-aos="fade-down">Sangre y amor</h1>
+              <p class="cantidad"></p>
+              <span>
+                <pre class="historia-detras2">
+                  Una historia 
+                  macabra y romantica 
+                  sobre lo que es el amor
+                </pre>
+              </span>
+            </a>
+          </div>
+          <div id="slide-2" class="card active card2" data-aos="fade-down">
+            <a href="/Pages/poemas/Deficit poetical.html">
+              <h1 class="titulos" data-aos="fade-down">Deficit poetical</h1>
+              <p class="cantidad"></p>
+              <span>
+                <pre class="historia-detras2">
+                  Bloqueos 
+                  de un poeta 
+                  es la perspectiva
+                  de este texto
+                </pre>
+              </span>
+            </a>
+          </div>
+          <div id="slide-3" class="card active card2" data-aos="fade-down">
+            <a href="/Pages/poemas/Palabra de letras.html">
+              <h1 class="titulos">Palabra de letras</h1>
+              <p class="cantidad"></p>
+              <span>
+                <pre class="historia-detras2">
+                  Plabras se hace 
+                  de letras
+                </pre>
+              </span>
+            </a>
+          </div>
+          <div id="slide-4" class="card active card2" data-aos="fade-down">
+            <a href="/Pages/poemas/Correo.html">
+              <h1 class="titulos">Correo</h1>
+              <p class="cantidad"></p>
+              <span>
+                <pre class="historia-detras2">
+                  Sin descripcion
+                </pre>
+              </span>
+            </a>
+          </div>
+          <div id="slide-5" class="card active card2" data-aos="fade-down">
+            <a href="/Pages/poemas/Sere.html">
+              <h1 class="titulos">Sere</h1>
+              <p class="cantidad"></p>
+              <span>
+                <pre class="historia-detras2">
+                  Sin descripcion
+                </pre>
+              </span>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+      <div class="slider-nav">
+        <button class="prev-slide button button-arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+        <button class="next-slide button button-arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite4.svg#reshot-icon-right-arrow-UCA8NGYZDJ"
+            ></use>
+          </svg>
+        </button>
+      </div>
+    </section>
+    <script src="/js/arrows.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>

@@ -31,7 +31,7 @@ body{
     color:#000 !important;
 }
 .popup{
-    width:50%; 
+   
     border-radius: 6px; 
     position:absolute; 
     top:50%; 
@@ -44,11 +44,13 @@ body{
     transition:transform 0.4s , top 0.4s;
     background:#fff; 
     border:1px solid #000; 
-    background:url(/images/hormigas.gif);
+    background:url(https://i.makeagif.com/media/3-07-2018/sWmlMp.gif);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
 
+}.arrow:hover{
+    background:transparent !important;
 }
 .titulo-form,.cantidad-form{
     padding:0 !important; 
@@ -67,7 +69,7 @@ body{
     transition:transform 0.4s , top 0.4s;
     background:#fff; 
     border:1px solid #000; 
-    background:url(/images/hormigas.gif);
+    background:url(https://i.makeagif.com/media/3-07-2018/sWmlMp.gif);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
@@ -94,13 +96,17 @@ body{
     border-radius:6px; 
     margin-top:2rem; 
 }.button:hover{
-    background:#000
+    background:#e6e2e2
 }.button:hover *{
     color:#fff; 
 }
+.poemass-2{
+    border:2px solid #000 !important; 
 
-
-
+}
+.tit{
+    font-size:0.8rem; 
+}
 
 .drawing{
     width:100%; 
@@ -137,6 +143,8 @@ body{
 }
 .carousel-indicators{
     position:fixed !important;
+    bottom:20rem !important; 
+    margin-right:5rem !important;
 }
 .carousel{
     
@@ -224,6 +232,8 @@ body{
     width:100%; 
     margin-top:-2rem; 
     margin-bottom:1rem; 
+}.headertest-2{
+    margin-top:-5rem !important; 
 }
 @media screen and (min-width:768px){
     .nav__toggler{
@@ -237,6 +247,8 @@ body{
         opacity:1;
         
 
+    }.nav__list__2{
+        margin-top:-2rem !important; 
     }
     .nav__item{
         border:0; 
@@ -259,7 +271,11 @@ body{
         width:100%; 
         margin-top:2rem; 
         margin-bottom:1rem; 
-    }.grid-item2-first{
+    }.headertest-2{
+        margin-top:1rem !important; 
+    }
+    
+    .grid-item2-first{
         margin-top:5rem; 
     }.first-res{
         height:100%; 
@@ -267,12 +283,18 @@ body{
         font-size:1.5rem !important; 
        margin-left:-14rem !important; 
     }.historia-detras-imagen{
-        margin-top:-11rem !important; 
+        margin-top:-9rem !important; 
         margin-left:-7.5rem !important; 
         font-size:1.5rem; 
     }
 
-}
+}@media screen and (max-width:768px){
+    .cantidad2{
+        font-size:0.65rem !important; 
+    }
+}.tit2{
+        padding-left:0 !important;
+    }
 .titulos-populares,.cantidad,.imagenes { 
     opacity:1; 
     transition: opacity 0.5s ease; /* Agrega una transición suave */ 
@@ -280,18 +302,19 @@ body{
     opacity: 0;
 }.historia-detras{
     opacity:0; 
+    color:#000;
 }.grid-item2:hover .historia-detras{
     opacity:1 !important; 
 }
 .historia-detras{
     padding-left:0; 
-    font-size:0.7rem; 
+    font-size:0.6rem; 
     text-align:left; 
     margin-left:-3.5rem; 
     margin-right:1rem; 
     font-family: inherit;
 }.historia-detras-imagen{
-    margin-top:-7.6rem; 
+    margin-top:-6rem; 
     font-size:1rem; 
 }
 
@@ -302,7 +325,7 @@ body{
 
 .icon{
     width:5rem; 
-    height:40px;
+    height:30px;
 }
 .icon--primary{
     fill:var(--color-primary);
@@ -363,9 +386,15 @@ body{
     
 }
 
-
+.button-arrow:hover{
+    transform:scale(1) !important; 
+    background:#fff !important; 
+}
 .poemass-carrusel{
     margin-top:0rem !important; 
+    margin-left:3.1rem !important;
+    width:70% !important;  
+
 }
 .options{
     margin-top:-3rem;
@@ -396,7 +425,7 @@ body{
     padding-left:3rem; 
     padding-right:2rem; 
 }.titulos{
-    font-size: 1rem ;
+    font-size: 1.8rem ;
     
     padding-right: 1rem;
     color:#000;
@@ -408,6 +437,10 @@ body{
     gap:1rem; 
     margin-top:5rem; 
     font-size:1.5rem; 
+}.titulos22{
+    font-size:1rem !important;
+}.titulos22-special{
+    font-size:0.8rem !important;
 }
 .poemass img{
     width:100%; 
@@ -443,10 +476,17 @@ body{
     }.titulos-main{
         margin-top:-0.5rem; 
     }.titulos-special{
-        margin-top:3.3rem; 
-        font-size:2.5rem; 
+        margin-top:3.3rem !important; 
+        font-size:2.5rem !important; 
     
+      }.titulos22{
+        font-size:3.3rem !important; 
+      }.titulos22-special{
+        font-size:2rem !important; 
       }
+}
+.titulos-special2{
+    font-size:0.8rem; 
 }
 .scroller {
     --scrollbar-color-thumb: hotpink;
@@ -465,12 +505,11 @@ body{
 }
 .titulos-poema{
         margin-top:3.3rem; 
-        padding-left:9.3rem; 
+        padding-left:7rem; 
         margin-bottom:2rem; 
         font-weight:600; 
     
 }.poem2{
-
     font-family:"JetBrains Mono", monospace;
     padding-left:0 !important;
 }.poem{
@@ -478,9 +517,13 @@ body{
 }@media screen and (min-width:768px){
     .titulos-poema{
         margin-top:5rem; 
-        padding-left:23rem; 
+        padding-left:10rem; 
         margin-bottom:4rem; 
         font-weight:600; 
+        
+    }.poem2{
+        font-size:1.5rem !important; 
+
     }
 }
 .button{

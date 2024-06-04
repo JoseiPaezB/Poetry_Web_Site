@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdeba">
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#" class="popup-link" onclick="openPopup()">
+              Hormiguear Poema
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="options">
+      <br />
+      <div class="containere">
+        <h3 class="titulos titulos-poema">Ira nocturna</h3>
+        <div class="poem">
+          <pre class="cantidad poem2">
+                Escribo para dejar de pensar
+                escribo para poder respirar
+                escribo para intentar olvidar
+                y, aun así,
+                mis caracteres no me siguen
+                nomás reflejan la ira sentida,
+                acompañados de rencor y arrepentimiento
+                más el dolor que se sitúa en el centro de mi pecho.
+                Y, aun así,
+                mis oídos retumban tu nombre
+                en los letreros veo tus ojos
+                la música me repite momentos
+                y las lágrimas se sitúan en mi corazón.
+                
+                Por qué no me has de escuchar
+                por qué no me has de hablar
+                por qué no me has de extrañar
+                por qué no me has de pensar
+                supongo que la respuesta yace contigo
+                en aquella postal vacía
+                la cual se desespera por ser vista
+                y que mi nombre escribas.
+                Mientras, tu sombra será lo único que tendré
+                sin poder mirar tu sonrisa.
+                Pero te recuerdo que, si te recuestas,
+                y tus ventanas perfectas se cierran
+                en algún punto me encontraras a mí.
+                </pre
+          >
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <input
+          class="input-type"
+          id="nameInput"
+          type="name"
+          required
+          placeholder="Digita tu nombre"
+        />
+        <button class="button" id="button" onclick="openPopup2()">
+          Hormiguear Poema
+        </button>
+      </div>
+      <div class="popup2" id="popup2">
+        <h2 class="titulos titulo-form">Gracias</h2>
+        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
+        <button class="button" id="button" onclick="closePopup2()">
+          Salir
+        </button>
+      </div>
+      <br />
+      <a href="/Pages/poemarios/lagrima-seca.html">
+        <button class="button arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+      </a>
+    </section>
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        // Obtiene el valor del input
+        let nameInput = document.getElementById("nameInput").value;
+
+        // Verifica si el input está vacío
+        if (nameInput.trim() === "") {
+          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
+          alert("Por favor, ingresa tu nombre.");
+        } else {
+          // Si no está vacío, continúa con la acción
+          popup2.classList.add("open-popup2");
+        }
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup2");
+        popup.classList.remove("open-popup");
+      }
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>

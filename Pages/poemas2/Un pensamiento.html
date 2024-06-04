@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdeba">
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#" class="popup-link" onclick="openPopup()">
+              Hormiguear Poema
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="options">
+      <br />
+      <div class="containere">
+        <h3 class="titulos titulos-poema">Un pensamiento</h3>
+        <div class="poem">
+          <pre class="cantidad poem2">
+                “De tanto grito que retumba, ni la más mínima idea sale.
+                Nada más se gesta acumulacion de palabras que en la mente de uno hace
+                sentido.
+                Intentar retomar ese tono divino parece imposible.
+                Tratar de analizar esa bulla causada por lágrimas consumidas y reprimidas,
+                No es logrado ni más aún reproducido.
+                Será a causa de aquel lugar que hace dudar,
+                Que genera preocupación de un aspecto físico que siempre tiene que ser
+                nítido,
+                Que genera inseguridad en seres que quieren ser guiados,
+                Que genera falta de interacción con entidades con caracter arrogante,
+                O que genera vacío mental y la pérdida de un propósito que una vez iluminó.
+                O sera a causa no de aquel lugar, pero de escapadas dimensionales,
+                Que genera desastres y conversaciones fluidas pero ridículas,
+                Que genera desinterés en los objetos centrales y desinterés en lo que enseña,
+                Que genera el aumento de duda y decaimiento los días consecuentes,
+                O que genera textos intencionales no pensados pero jamás respondidos.
+                O sera a causa de una soledad perpetua en donde la cama es tu señora,
+                Que genera la búsqueda en el espejo de alguien quien sabía reír,
+                Que genera perdida en escritura aficionada en donde los textos solo se apilan,
+                Que genera alejamiento de quienes están detrás de pantallas azules,
+                O que genera la pérdida de una identidad que fue formada por quien ya no te
+                recuerda.
+                O será causa de un cambio y una vida nueva,
+                Que genera cierto optimismo divino que alienta a una nueva persona,
+                Que genera actividades escapadas de la rutina basadas en lo espontáneo,
+                Que genera el sonido de una risa mezclada por influencias del momento,
+                O que genera un ser cuya vida está entonandose en los momentos”.
+                “No lo sé” dijo el joven (mientras se cuestionaba y mataba el cigarrillo).
+                </pre
+          >
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <input
+          class="input-type"
+          id="nameInput"
+          type="name"
+          required
+          placeholder="Digita tu nombre"
+        />
+        <button class="button" id="button" onclick="openPopup2()">
+          Hormiguear Poema
+        </button>
+      </div>
+      <div class="popup2" id="popup2">
+        <h2 class="titulos titulo-form">Gracias</h2>
+        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
+        <button class="button" id="button" onclick="closePopup2()">
+          Salir
+        </button>
+      </div>
+      <br />
+      <a href="/Pages/poemarios/lagrima-seca.html">
+        <button class="button arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+      </a>
+    </section>
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        // Obtiene el valor del input
+        let nameInput = document.getElementById("nameInput").value;
+
+        // Verifica si el input está vacío
+        if (nameInput.trim() === "") {
+          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
+          alert("Por favor, ingresa tu nombre.");
+        } else {
+          // Si no está vacío, continúa con la acción
+          popup2.classList.add("open-popup2");
+        }
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup2");
+        popup.classList.remove("open-popup");
+      }
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>

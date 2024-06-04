@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test.css" />
+    <link rel="stylesheet" href="/css/otro.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Move the link tag here -->
+  </head>
+  <body>
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="/Pages/hormiguero.html" onclick="preventCollapse(event)"
+              >Hormiguero</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Pages/Autor.html" onclick="preventCollapse(event)"
+              >Autor</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Pages/Contactar.html" onclick="preventCollapse(event)"
+              >Contactar</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <div id="slide-1" class="card active" data-aos="fade-up">
+            <a href="#">
+              <h1 class="titulos" data-aos="fade-down">Slide 1</h1>
+              <p class="cantidad">Slide 1 content</p>
+            </a>
+          </div>
+          <div id="slide-2" class="card active" data-aos="fade-down">
+            <a href="#">
+              <h1 class="titulos" data-aos="fade-down">Slide 2</h1>
+              <p class="cantidad">Slide 1 content</p>
+            </a>
+          </div>
+          <div id="slide-3" class="card active" data-aos="fade-down">
+            <a href="#">
+              <h1 class="titulos">Slide 1</h1>
+              <p class="cantidad">Slide 1 content</p>
+            </a>
+          </div>
+        </div>
+        <div class="slider-nav">
+          <button class="prev-slide button button-arrow">
+            <svg class="icon icon--white">
+              <use
+                xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+              ></use>
+            </svg>
+          </button>
+          <button class="next-slide button button-arrow">
+            <svg class="icon icon--white">
+              <use
+                xlink:href="/images/sprite4.svg#reshot-icon-right-arrow-UCA8NGYZDJ"
+              ></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>

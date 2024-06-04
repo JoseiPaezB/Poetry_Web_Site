@@ -1,3 +1,5 @@
+
+
 const collapsibles = document.querySelectorAll(".collapsible");
 const titulo = document.querySelector(".titulos-principales");
 
