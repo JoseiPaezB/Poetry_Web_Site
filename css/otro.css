@@ -460,6 +460,12 @@ body{
     font-size:1rem !important;
 }.titulos22-special{
     font-size:0.8rem !important;
+}.formss{
+    width:auto; 
+    padding:0; 
+    margin:0; 
+    display:flex; 
+    margin-top:0;
 }
 .poemass img{
     width:100%; 
