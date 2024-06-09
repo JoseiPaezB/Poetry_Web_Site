@@ -8,16 +8,33 @@ body{
     font-family:"JetBrains Mono", monospace;
 }
 .card1{
-    background-image:url(/images/IMG_9485.jpg);
+    background-image:url(/images/56908cbf-3070-4d94-94ed-0c8d080caa71.JPG);
     background-size:cover;
     background-position:center;
    
     
-}.card1 .titulos, .card1 .cantidad, .card2 .titulos, .card2 .cantidad{
+}.card1 .titulos, .card1 .cantidad, .card2 .titulos, .card2 .cantidad.card3 .titulos{
     color:#fff !important; 
 
 }.card2{
-    background:rgba(1, 1, 1, 0.5) url(/images/IMG_9693.jpg) no-repeat center center/cover;
+    background:rgba(1, 1, 1, 0.5) url(/images/BB641B2E-B7E2-4A03-94D0-6D6BE3903615.JPG) no-repeat center center/cover;
+}.card3{
+    background-image:url(/images/IMG_9784.jpg);
+    background-size:cover;
+    background-position:center;
+    
+   
+    
+}.card3 .titulos,.card4 .titulos,.card5 .titulos{
+    color:#fff !important;
+}.card4{
+    background-image:url(/images/IMG_9409.jpg);
+    background-size:cover;
+    background-position:center;
+}.card5{
+    background-image:url(/images/IMG_8776.jpg);
+    background-size:cover;
+    background-position:center;
 }
 .container3{
     padding:2rem; 

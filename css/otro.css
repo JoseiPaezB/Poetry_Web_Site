@@ -56,7 +56,7 @@ body{
     padding:0 !important; 
 }
 .popup2{
-    width:50%; 
+    
     border-radius: 6px; 
     position:absolute; 
     top:50%; 
@@ -170,6 +170,10 @@ body{
     padding-left:0;
    
     
+}@media screen and (max-width:380px){
+    .titulos-nuevos-largos{
+        font-size: 1.73rem !important;
+    }
 }
 
 .nav{
@@ -286,6 +290,11 @@ body{
         margin-top:-9rem !important; 
         margin-left:-7.5rem !important; 
         font-size:1.5rem; 
+    }.cantidad-form{
+        font-size:1rem !important;
+    }.poemass3{
+        height: 100vh !important;
+        width: 70vh !important;
     }
 
 }@media screen and (max-width:768px){
@@ -298,11 +307,8 @@ body{
 .titulos-populares,.cantidad,.imagenes { 
     opacity:1; 
     transition: opacity 0.5s ease; /* Agrega una transición suave */ 
-}.grid-item2:hover .titulos-populares,.grid-item2:hover .cantidad,.grid-item2:hover .imagenes{
-    opacity: 0;
 }.historia-detras{
-    opacity:0; 
-    color:#000;
+    display:none; 
 }.grid-item2:hover .historia-detras{
     opacity:1 !important; 
 }
@@ -316,6 +322,11 @@ body{
 }.historia-detras-imagen{
     margin-top:-6rem; 
     font-size:1rem; 
+}
+@media screen and (max-width:800px){
+    .imagenes2{
+        max-height:100% !important;
+    }
 }
 
 
@@ -356,7 +367,10 @@ body{
 }@media screen and (min-width:768px){
     .biografia{
         font-size:1.5rem !important; 
-        max-width:75ch; 
+        max-width:55ch !important; 
+        
+    }.demi{
+        padding-left:2rem !important;
     }
 }
 .biografia{
@@ -369,6 +383,11 @@ body{
 }
 .contactarme{
     min-height:100vh; 
+}.poemass3{
+    border:none !important;
+    
+}.poemass3 img{
+    max-width:none!important; 
 }
 
 .grid-container2 {
