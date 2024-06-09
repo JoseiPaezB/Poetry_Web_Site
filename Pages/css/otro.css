@@ -463,7 +463,6 @@ body{
 }
 .poemass img{
     width:100%; 
-    max-width:150px; 
     margin-bottom:-0.75rem;
     height:100%; 
     object-fit:cover; 
