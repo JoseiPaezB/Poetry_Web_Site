@@ -38,6 +38,13 @@ body{
 }
 .container3{
     padding:2rem; 
+}@media screen and (max-width:800px){
+    .container3{
+        margin-top:4rem !important; 
+    }.titulo-nuevos{
+        margin-bottom: -2rem;
+        margin-top:4rem; 
+    }
 }
 
 .slider-wrapper{
