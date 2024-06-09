@@ -300,6 +300,12 @@ body{
 }@media screen and (max-width:768px){
     .cantidad2{
         font-size:0.65rem !important; 
+    }.poemass-4{
+        margin-top:5rem !important;
+        margin-bottom:15rem !important;  
+    }.titulos-33{
+        margin-top:-7.5rem !important; 
+        
     }
 }.tit2{
         padding-left:0 !important;
@@ -469,7 +475,6 @@ body{
 }
 .poemass img{
     width:100%; 
-    margin-bottom:-1rem; 
     height:100%; 
     object-fit:cover; 
     

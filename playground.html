@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="/css/otro.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
     rel="stylesheet"
@@ -17,7 +19,7 @@
     <header class="headertest">
       <nav class="nav collapsible">
         <div class="titulos-main">
-          <h2 class="titulos titulos-principales"></h2>
+          <h2 class="titulos titulos-principales">Letras Quebradas</h2>
         </div>
 
         <svg class="icon icon--white nav__toggler">
@@ -25,131 +27,227 @@
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="nav__item">
-            <a href="#" class="popup-link" onclick="openPopup()">
-              Hormiguear Poema
-            </a>
+            <a href="/hormiguero.html" onclick="preventCollapse(event)"
+              >Hormiguero</a
+            >
+          </li>
+          <li class="nav__item">
+            <a href="/Autor.html" onclick="preventCollapse(event)">Autor</a>
+          </li>
+          <li class="nav__item">
+            <a href="/Contactar.html" onclick="preventCollapse(event)"
+              >Contactar</a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <section class="options">
       <br />
-      <div class="containere">
-        <h3 class="titulos titulos-poema">Sangre y amor</h3>
-        <div class="poem">
-          <pre class="cantidad poem2">
-            Amor por la ventana 
 
-            Amor por la puerta 
+      <div class="grid-container2">
+        <div class="grid-item2 grid-item2-first" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Sangre y amor.html">
+              <img
+                class="imagenes"
+                src="/images/56908cbf-3070-4d94-94ed-0c8d080caa71.JPG"
+                alt=""
+              />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Amor en la esquina. 
+          <h2 class="titulos titulos22 titulos-special">Sangre y amor</h2>
+        </div>
+        <div class="grid-item2 grid-item2-first" data-aos="fade-left">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Deficit poetical.html">
+              <img
+                class="imagenes"
+                src="/images/BB641B2E-B7E2-4A03-94D0-6D6BE3903615.JPG"
+                alt=""
+              />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            
-            ¿Qué amor? 
+          <h2 class="titulos titulos22 titulos-special">Deficit poetical</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Palabra de letras.html">
+              <img class="imagenes" src="/images/IMG_9784.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            ¿Qué diriges a mí? 
+          <h2 class="titulos titulos22 titulos-special">Palabra de letras</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-left">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Correo.html">
+              <img class="imagenes" src="/images/IMG_9409.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Estas hablando 
+          <h2 class="titulos titulos22 titulos-special">Correo</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Sere.html">
+              <img class="imagenes" src="/images/IMG_8776.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            De mi amor 
+          <h2 class="titulos titulos22 titulos-special">Seré</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-left">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Giro de contexto.html">
+              <img class="imagenes" src="/images/IMG_0227.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            O estas diciendo 
+          <h2 class="titulos titulos22 titulos-special">Giro de con-texto</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Versos inchorentes.html">
+              <img class="imagenes" src="/images/IMG_8395.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            ¿Amor? 
+          <h2 class="titulos titulos22 titulos-special">Versos incoherentes</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-left">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/pinches calcetas.html">
+              <img class="imagenes" src="/images/IMG_9624.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            ¿Cuál amor te refieres 
+          <h2 class="titulos titulos22 titulos-special">Pinches calcetas</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3 poemass-4">
+            <a href="/Pages/poemas/Poema de poeta.html">
+              <img class="imagenes" src="/images/IMG_8445 (1).jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            De ese que yo me llamo 
+          <h2 class="titulos titulos22 titulos-special titulos-33">
+            Poema de poeta
+          </h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-left">
+          <div class="poemass poemass-2 poemass-3 poemass-4">
+            <a href="/Pages/poemas/Homenaje al tintoso.html">
+              <img class="imagenes" src="/images/IMG_8316.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            O ese de palabra? 
-            
+          <h2 class="titulos titulos22 titulos-special titulos-33">
+            Homenaje al tintoso
+          </h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/La crecida.html">
+              <img
+                class="imagenes"
+                src="/images/IMG_5855_Original.jpg"
+                alt=""
+              />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Amor no es palabra 
+          <h2 class="titulos titulos22 titulos-special">La crecida</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-left">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/nombre llamativo.html">
+              <img class="imagenes" src="/images/IMG_9517.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Amor es el rojo
+          <h2 class="titulos titulos22 titulos-special">Nombre llamativo</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/sin titulo.html">
+              <img class="imagenes" src="/images/IMG_9481.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Que hay tu sangre 
+          <h2 class="titulos titulos22 titulos-special">Sin titulo</h2>
+        </div>
+        <div class="grid-item2">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/alcnazo a mirar.html">
+              <img class="imagenes" src="/images/IMG_9712.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Y pasa por tu lengua 
+          <h2 class="titulos titulos22 titulos-special">Alcanzo a mirar</h2>
+        </div>
+        <div class="grid-item2" data-aos="fade-right">
+          <div class="poemass poemass-2 poemass-3">
+            <a href="/Pages/poemas/Comentario narrativo.html">
+              <img class="imagenes" src="/images/IMG_9698.jpg" alt="" />
+            </a>
+            <span>
+              <pre class="historia-detras historia-detras-imagen"></pre>
+            </span>
+          </div>
 
-            Y llega a mi panza. 
-            
-
-            Entonces, 
-
-            Cuando diga: 
-
-            Amor por la ventana, 
-
-            Amor por la puerta,
-
-            Amor en la esquina, 
-
-            No te digo a ti, amor, 
-
-            Digo, amor, 
-            
-            Sangre por la ventana 
-
-            Sangre por la puerta 
-
-            Sangre en la esquina. 
-
-            Ahora sí, 
-
-            Amor, 
-
-            Pon tu lengua y lame cada una 
-
-            Para que el amor 
-            
-            Llegue a tu panza. 
-            
-            
-                </pre
-          >
+          <h2 class="titulos titulos22 titulos-special">
+            Comentario narrativo
+          </h2>
         </div>
       </div>
-
-      <div class="popup" id="popup">
-        <form
-          class="formss"
-          id="contactForm"
-          action="https://formspree.io/f/myyrrgwn"
-          method="POST"
-        >
-          <input
-            type="hidden"
-            name="poema_title"
-            id="poemaTitle"
-            value="Deficit"
-          />
-          <input
-            class="input-type"
-            id="nameInput"
-            type="text"
-            name="name"
-            placeholder="Digita tu nombre"
-          />
-          <button
-            class="button"
-            id="button"
-            onclick="openPopup2()"
-            type="submit"
-          >
-            Hormiguear Poema
-          </button>
-        </form>
-      </div>
-      <div class="popup2" id="popup2">
-        <h2 class="titulos titulo-form">Gracias</h2>
-        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
-        <button class="button" id="button" onclick="closePopup2()">
-          Salir
-        </button>
-      </div>
       <br />
-      <a href="/Pages/poemarios/letra-quebrada.html">
+      <br />
+      <a href="/hormiguero.html">
         <button class="button arrow">
           <svg class="icon icon--white">
             <use
@@ -159,65 +257,6 @@
         </button>
       </a>
     </section>
-    <script>
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (event) {
-          // Evitar el comportamiento predeterminado del formulario
-          event.preventDefault();
-
-          // Obtener los datos del formulario
-          const formData = new FormData(this);
-
-          // Realizar la petición AJAX
-          fetch(this.getAttribute("action"), {
-            method: "POST",
-            body: formData,
-            headers: {
-              Accept: "application/json",
-            },
-          })
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error("Network response was not ok");
-              }
-              return response.json();
-            })
-            .then((data) => {
-              // Manejar la respuesta del servidor
-              console.log(data);
-
-              document.getElementById("nameInput");
-            })
-            .catch((error) => {});
-        });
-    </script>
-    <script>
-      let popup = document.getElementById("popup");
-      let popup2 = document.getElementById("popup2");
-
-      function openPopup() {
-        popup.classList.add("open-popup");
-      }
-      function openPopup2() {
-        // Obtiene el valor del input
-        let nameInput = document.getElementById("nameInput").value;
-
-        // Verifica si el input está vacío
-        if (nameInput.trim() === "") {
-          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
-          alert("Por favor, ingresa tu nombre.");
-        } else {
-          // Si no está vacío, continúa con la acción
-          popup2.classList.add("open-popup2");
-        }
-      }
-      function closePopup2() {
-        popup2.classList.remove("open-popup2");
-        popup.classList.remove("open-popup");
-      }
-    </script>
-
     <script src="/js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
