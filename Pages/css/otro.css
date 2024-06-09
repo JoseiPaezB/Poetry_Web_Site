@@ -300,6 +300,8 @@ body{
 }@media screen and (max-width:768px){
     .cantidad2{
         font-size:0.65rem !important; 
+    }.imagenesrancias{
+        margin-top:-2rem;
     }
 }.tit2{
         padding-left:0 !important;
