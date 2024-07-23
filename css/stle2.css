@@ -237,7 +237,13 @@ a{
     margin-right:1rem; 
     vertical-align:middle; 
 }
-
+@media screen and (max-width:800px){
+    .imagenes_espalda{
+        width:150% !important; 
+        height:50% !important
+    }
+    
+}
 .btn--primary{
     border:2px solid var(--color-primary);
     
@@ -359,12 +365,11 @@ a{
 
 }
 
-
-
+@media screen and (max-width:800px){
 .card--primary .badge--primary{
     background:#126de5; 
 
-}
+}}
 .card__body >img{
     width:100%; 
 

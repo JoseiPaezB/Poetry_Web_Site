@@ -8,7 +8,7 @@ body{
     font-family:"JetBrains Mono", monospace;
 }
 .card1{
-    background-image:url(/images/56908cbf-3070-4d94-94ed-0c8d080caa71.JPG);
+    background-image:url(/images/Sientes.JPG);
     background-size:cover;
     background-position:center;
    
@@ -17,9 +17,9 @@ body{
     color:#fff !important; 
 
 }.card2{
-    background:rgba(1, 1, 1, 0.5) url(/images/BB641B2E-B7E2-4A03-94D0-6D6BE3903615.JPG) no-repeat center center/cover;
+    background:rgba(1, 1, 1, 0.5) url(/images/Espalda.JPG) no-repeat center center/cover;
 }.card3{
-    background-image:url(/images/IMG_9784.jpg);
+    background-image:url(/images/22.jpg);
     background-size:cover;
     background-position:center;
     
