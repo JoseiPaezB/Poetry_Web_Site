@@ -135,7 +135,7 @@ body{
 }
 .first-res{
     margin-top:5rem; 
-    height:80% !important;  
+    height:65%;  
     
 }.titulos-populares{
     padding-right:2rem!important; 
@@ -568,4 +568,9 @@ body{
     color:#434040;     
     cursor:pointer; 
     transform:scale(1.2)
+}
+@media screen and (max-width:800px){
+   .parte_dos{
+    margin-top:8rem !important
+   }
 }

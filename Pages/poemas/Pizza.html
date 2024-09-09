@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Poemario Hormiguero - El dilema delSER no dramatico - Pizza"
+    />
+    <meta property="og:title" content="Pizza" />
+    <meta
+      property="og:description"
+      content="Pizza - El dilema delSER no dramatico - Hormiguero"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="https://hormigueropoesia.netlify.app/" />
+    <link rel="icon" href="/images/anticon.svg" type="image/svg+xml" />
+    <title>Pizza</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdeba">
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#" class="popup-link" onclick="openPopup()">
+              Hormiguear Poema
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="options">
+      <br />
+      <div class="containere">
+        <h3 class="titulos titulos-poema"> Pizza</h3>
+        <div class="poem">
+          <pre class="cantidad poem2">
+          Y tú comes pizza. 
+          Te devoras el queso 
+          La salsa tomatoza y se va a tu esófago. 
+          Y todo comen pizza 
+          Todos se la embuten 
+          En noches de borrachera 
+          En noches de no querer hacer merienda. 
+          Tu madre come pizza 
+          Tu abuela come pizza 
+          El perro come pizza  
+          La vaca como pizza 
+          Y tú comes pizza. 
+          Si se presenta una lista que diga quién no come pizza 
+          Solo firmarían quienes intentan distinguir, pero por dentro se mueren: 
+          Anisan comerse esa pizza 
+          Toda quesosa tomatoza tal vez con ingredientes de extra,
+          tal vez con un borde delgado o suave o flácido o quemado o crudo 
+          Pero sabes que quieren pizza 
+          Así como tú quieres pizza. 
+          No hay un solo día 
+          En el que camines y no veas la pizza en la mano,
+          En la boca, en las encías o en los dedos de alguien. 
+          Se podrá decir que la pizza es la salvación mundial, 
+          Nos salvará de las bombas 
+          De los totalitaristas. 
+          De los fascistas. 
+          De los sovietizas. 
+          De los pulcros. 
+          De los ladrones. 
+          De los vándalos. 
+          Y qué tal si los juntamos todos, 
+          Se sientan en una mesa de condena 
+          Y les servimos pizza. 
+          Esa que tú te comes 
+          Esa que la vaca se come 
+          Esa que todo el mundo come. 
+          Podrá volverse ese estirón de manos 
+          Entre razas 
+          Entre parejas divorciadas 
+          Entre gobiernos de odio 
+          Entre gente muerta 
+          Que se ponen en buenas, se ríen y luego cada quien se sambute su rebanada 
+          De la quesosa 
+          De la tomatoza 
+          De la deliciosa 
+          Pizza o pizza. 
+
+          Mañana tú haz tu día. 
+          Normal sin ocurrencias aún que verás pizzas. 
+          Y te acercas a la tienda la más cercana del bloque 
+          Agarras la caja grande que incomoda, pero te hace babear hasta que la abras. 
+          La llevas al palacio presidencial mexicano, 
+          Se las pones en frente
+          Y jactas 
+          - Atención que le doy pizza 
+          al que renuncie. 
+          De esa que yo como 
+          De esa que la vaca come 
+          De esa que todo el mundo come. -
+
+
+
+                </pre
+          >
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <form
+          class="formss"
+          id="contactForm"
+          action="https://formspree.io/f/myyrrgwn"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="poema_title"
+            id="poemaTitle"
+            value="Pizza"
+          />
+          <input
+            class="input-type"
+            id="nameInput"
+            type="text"
+            name="name"
+            placeholder="Digita tu nombre"
+          />
+          <button
+            class="button"
+            id="button"
+            onclick="openPopup2()"
+            type="submit"
+          >
+            Hormiguear Poema
+          </button>
+        </form>
+      </div>
+      <div class="popup2" id="popup2">
+        <h2 class="titulos titulo-form">Gracias</h2>
+        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
+        <button class="button" id="button" onclick="closePopup2()">
+          Salir
+        </button>
+      </div>
+      <br />
+      <a href="/Pages/poemarios/Dilema_delSER_no_dramatico.html">
+        <button class="button arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+      </a>
+    </section>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          // Evitar el comportamiento predeterminado del formulario
+          event.preventDefault();
+
+          // Obtener los datos del formulario
+          const formData = new FormData(this);
+
+          // Realizar la petición AJAX
+          fetch(this.getAttribute("action"), {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              // Manejar la respuesta del servidor
+              console.log(data);
+
+              document.getElementById("nameInput");
+            })
+            .catch((error) => {});
+        });
+    </script>
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        // Obtiene el valor del input
+        let nameInput = document.getElementById("nameInput").value;
+
+        // Verifica si el input está vacío
+        if (nameInput.trim() === "") {
+          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
+          alert("Por favor, ingresa tu nombre.");
+        } else {
+          // Si no está vacío, continúa con la acción
+          popup2.classList.add("open-popup2");
+        }
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup2");
+        popup.classList.remove("open-popup");
+      }
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>

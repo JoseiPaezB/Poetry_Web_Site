@@ -46,7 +46,11 @@
   .slides-container {
     padding: 0 10px;
   }
-  
+  @media screen and (max-width:800px){
+    .parte_dos{
+     margin-top:8rem !important
+    }
+ }
   .slider-list {
     list-style-type: none;
     margin: 0;

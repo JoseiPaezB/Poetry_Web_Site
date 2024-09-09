@@ -927,7 +927,11 @@ a{
     margin:12rem 0rem;  
 
 }
-
+@media screen and (max-width:800px){
+    .parte_dos{
+     margin-top:8rem !important
+    }
+ }
 .feature__image{
     width:55%; 
     margin-bottom:2rem; 

@@ -6,6 +6,13 @@ body{
     
     
 }
+
+@media screen and (min-width:800px){
+    .parte_dos{
+        margin-top:-2rem !important; 
+        
+       }
+ }
 .input-type{
     font-size:1rem !important; 
     font-family:  "JetBrains Mono", monospace !important;
@@ -265,7 +272,7 @@ body{
         pointer-events:all;
         font-size:2rem ;     
     }.grid-item2:hover{
-        transform:scale(1.2) !important; 
+        transform:scale(1.1) !important; 
         
     }
     .headertest{
@@ -564,4 +571,11 @@ body{
     color:#434040;     
     cursor:pointer; 
     transform:scale(1.2)
-}
+} .nuevo-badge {
+    background-color: #000; /* Color de fondo */
+    color: white;          /* Color del texto */
+    font-size: 12px;       /* Tamaño de la fuente */
+    padding: 2px 5px;      /* Espaciado interno */
+    border-radius: 5px;    /* Bordes redondeados */
+    margin-left: 10px;     /* Separación del texto */
+  }
