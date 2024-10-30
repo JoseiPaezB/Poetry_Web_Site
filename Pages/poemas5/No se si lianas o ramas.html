@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Poemario Hormiguero - Caiman - Nose_si_lianas_o_ramas"
+    />
+    <meta property="og:title" content="Nose_si_lianas_o_ramas" />
+    <meta
+      property="og:description"
+      content="Nose_si_lianas_o_ramas - Caiman - Hormiguero"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="https://hormigueropoesia.netlify.app/" />
+    <link rel="icon" href="/images/anticon.svg" type="image/svg+xml" />
+    <title>Nose_si_lianas_o_ramas</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdeba">
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#" class="popup-link" onclick="openPopup()">
+              Hormiguear Poema
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="options">
+      <br />
+      <div class="containere">
+        <h3 class="titulos titulos-poema">No sé si lianas o ramas</h3>
+        <div class="poem">
+          <pre class="cantidad poem2">
+            Lianas de la selva que me hablan. 
+            Me hacen sentirme en casa con cada luna y venida de sol que hay. 
+            Soy uno más con la tierra 
+            Siendo verde 
+            Siendo cristal de río 
+            Y en su cueva. 
+            Se esconde el caimán. 
+            Que no respira 
+            Que parpadea quieta 
+            Que es sumisa a su sangre 
+            Que me ignora cuando me acerco.  
+            Soy: 
+            Como una gota de agua 
+            Mezclada en el río 
+            Inexistente que no tiene escarcha 
+            Ni brillo de coágulo 
+            Nomás fluyó en la corriente que respira el líquido 
+            Y rozó la piel de ella 
+            Del caimán 
+            La acaricio suavemente 
+            Y no se despista. 
+            Sigue en el albedrío de pestañear 
+            Y esperar a su nueva presa mientras 
+            Seca lo rojo que corre de su cuerpo. 
+            Yo fluyo 
+            Y fluyo y fluyo 
+            En el rocío de tierra que camina por el
+            Río, aún que voy susurrando, 
+            A ella de piel ilesa 
+            De piel con escamas largas que sirven de paneles, 
+            <em>
+              Voltéate caimán.
+              Sal
+              De tu cueva envejecida
+              Y únete conmigo
+              En el pasar del río
+              Que no termina
+              Ni en luna ni día.
+              Caimán
+              Soy tu presa.
+              Encantado de tus escamas
+              Que se esconden
+              Por debajo del agua.
+            </em>
+
+            Y fluyo y fluyo.
+            En la tristeza 
+            Que se une con la corriente del río.
+            Y te dejo sola,
+            Cómo las casas de paja 
+            Que el viento soplaba. 
+
+                </pre
+          >
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <form
+          class="formss"
+          id="contactForm"
+          action="https://formspree.io/f/myyrrgwn"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="poema_title"
+            id="poemaTitle"
+            value="Nose_si_lianas_o_ramas"
+          />
+          <input
+            class="input-type"
+            id="nameInput"
+            type="text"
+            name="name"
+            placeholder="Digita tu nombre"
+          />
+          <button
+            class="button"
+            id="button"
+            onclick="openPopup2()"
+            type="submit"
+          >
+            Hormiguear Poema
+          </button>
+        </form>
+      </div>
+      <div class="popup2" id="popup2">
+        <h2 class="titulos titulo-form">Gracias</h2>
+        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
+        <button class="button" id="button" onclick="closePopup2()">
+          Salir
+        </button>
+      </div>
+      <br />
+      <a href="/Pages/poemarios/Caiman.html">
+        <button class="button arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+      </a>
+    </section>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          // Evitar el comportamiento predeterminado del formulario
+          event.preventDefault();
+
+          // Obtener los datos del formulario
+          const formData = new FormData(this);
+
+          // Realizar la petición AJAX
+          fetch(this.getAttribute("action"), {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              // Manejar la respuesta del servidor
+              console.log(data);
+
+              document.getElementById("nameInput");
+            })
+            .catch((error) => {});
+        });
+    </script>
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        // Obtiene el valor del input
+        let nameInput = document.getElementById("nameInput").value;
+
+        // Verifica si el input está vacío
+        if (nameInput.trim() === "") {
+          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
+          alert("Por favor, ingresa tu nombre.");
+        } else {
+          // Si no está vacío, continúa con la acción
+          popup2.classList.add("open-popup2");
+        }
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup2");
+        popup.classList.remove("open-popup");
+      }
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>
