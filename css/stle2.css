@@ -761,6 +761,11 @@ a{
     border-bottom:1px solid #fff; 
 
 }
+.nav__item21{
+   
+    border-bottom:none !important; 
+
+}
 
 .nav__item >a{
     color:#fff; 

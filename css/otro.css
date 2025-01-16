@@ -228,6 +228,8 @@ body{
 .nav__brand{
      
     transform:translateY(5px); 
+}.headertest21{
+    background:#000!important; 
 }
 .headertest{
     background:#fff;
@@ -309,6 +311,9 @@ body{
     }
 }.tit2{
         padding-left:0 !important;
+    }
+    .poemass-22{
+        border:5px solid #fff !important;
     }
 .titulos-populares,.cantidad,.imagenes { 
     opacity:1; 
@@ -573,4 +578,18 @@ body{
    .parte_dos{
     margin-top:8rem !important
    }
+}
+.sperm{
+    color:#fff !important; 
+    background:url(/images/image_processing20200626-22041-8ryv13.gif); 
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+.icon-res{
+    background: #000 !important;
+    border: #000 !important;
+    color: #000 !important;
+
+
 }

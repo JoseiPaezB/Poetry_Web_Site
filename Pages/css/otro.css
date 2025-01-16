@@ -6,7 +6,9 @@ body{
     
     
 }
-
+.sperm{
+    background:url(/images/image_processing20200626-22041-8ryv13.gif)
+}
 @media screen and (min-width:800px){
     .parte_dos{
         margin-top:-2rem !important; 
@@ -147,6 +149,15 @@ body{
 }.titulos-populares{
     padding-right:2rem!important; 
     padding-left:2rem;
+}
+@media screen and (min-width:768px) {
+    .titulo-fermentado{
+        font-size: 2.7rem !important; 
+    }
+    
+}
+.poemass-22{
+    border:5px solid #fff !important;
 }
 .carousel-indicators{
     position:fixed !important;

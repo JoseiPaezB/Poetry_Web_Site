@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Poemario Hormiguero - Fermentado en los dedos - Penecillo"
+    />
+    <meta property="og:title" content="Penecillo" />
+    <meta
+      property="og:description"
+      content="Penecillo - Fermentado en los dedos - Hormiguero"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="https://hormigueropoesia.netlify.app/" />
+    <link rel="icon" href="/images/anticon.svg" type="image/svg+xml" />
+    <title>Penecillo</title>
+  </head>
+  <link rel="stylesheet" href="/css/stle2.css" />
+  <link rel="stylesheet" href="/css/otro.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet"
+  />
+  <body class="resdeba">
+    <header class="headertest">
+      <nav class="nav collapsible">
+        <div class="titulos-main">
+          <h2 class="titulos titulos-principales"></h2>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="/images/sprite2.svg#anticon"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item">
+            <a href="#" class="popup-link" onclick="openPopup()">
+              Hormiguear Poema
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="options">
+      <br />
+      <div class="containere">
+        <h3 class="titulos titulos-poema">Penecillo</h3>
+        <div class="poem">
+          <pre class="cantidad poem2">
+            Tenía un amigo,
+
+            De color blanco con pelo rojizo
+
+            Que vestía camisas
+
+            De rababaya para que le brote
+
+            El pelo de su pecho.
+
+            A él le gustaba chupar.
+
+            Los penes de vagabundos
+
+            Que vivían debajo del panecillo.
+
+            Parecía que su sabor
+
+            De perro decaído,
+
+            De queso fermentado con tufo de pies,
+
+            De sal de mar con moco de guagua,
+
+            Le fascinaba.
+
+            Él se sumergía profundo,
+
+            Los metía en su boca
+
+            A todos,
+
+            A veces al mismo tiempo,
+
+            Y decía oh si, oh si,
+
+            Mientras que los barbudos cochinos
+
+            Veían estrellas
+
+            Y a la virgen viva en carne misma.
+
+            Luego cuando llegaba la hora blanca,
+
+            Su fermentado no se lo tragaba.
+
+            El gargareaba
+
+            Como si fuese ese azul enjuague bucal,
+
+            Y cuando quedaba burbujeó suficiente,
+
+            Escupía en su tarro favorito
+
+            Que tenía la cara de Minnie mouse.
+
+            Decía que ese es su frasco de las glorias.
+
+            De sus días de diva.
+
+            Que le llenaba de paz, decía.
+
+            Una vez mi amigo,
+
+            Después de mamar
+
+            Y mamar,
+
+            Gargareó tanto ghee blanco
+
+            Debajo de la virgen,
+
+            Que él se enamoró.
+
+            Ese gel con escarcha con el que gargareaba,
+
+            Le supo a limón,
+
+            Le supo a coco,
+
+            Y le brotaron las pupilas.
+
+            Fue como si comiese una ratatouille,
+
+            Y ahí el sollozo:
+
+            Entre tanto que he probado
+
+            Entre tanto que Minnie ha guardado
+
+            Nunca había recordado el olor de mi papá.
+
+            Y es por eso
+
+            Que mi amigo Pijin
+
+            No volvió a asomar.
+
+            Recuerdo que después regresé al panecillo
+
+            A dar un paseo con mis hijos
+
+            Y esperaba encontrarlo tirado en el suelo,
+
+            Con caca y leche de horchata en la cara.
+
+            Pero ahora estaba abrazado de alguien.
+
+            Era su papá quien estaba ahí con él.
+
+            Fue cuando entendí,
+
+            Que aquel vagabundo de ese entonces
+
+            Que chupo tanto que la virgen vino en vida,
+
+            Que aquel vagabundo
+
+            Que le dio su viaje equinoxial
+
+            No era simplemente otro más.
+
+            Quién lo diría,
+
+            Mi amigo pijin
+
+            Que de tanto mamar
+
+            Y mamar
+
+            Término fermentando a su papá.
+
+            Regrese a casa con mis hijos,
+
+            Quedé sentado eternamente en el sofá
+
+            Y vi la foto colgada,
+
+            De pijin, yo y su papá.
+
+            En una playa con limones y cocos
+
+            Mientras vestía su camisa de minnie.
+
+            Luego me decía en mente:
+
+            Tal vez la virgen lo castigó,
+
+            Por tanto guardar en su frasco
+
+            Los bebés nunca nacidos de vagabundos.
+
+            Tal vez ella lo veía hacer sus chupadas
+
+            Y decía
+
+            La humanidad es algo indigno de mi respeto
+
+
+        </div>
+      </div>
+
+      <div class="popup" id="popup">
+        <form
+          class="formss"
+          id="contactForm"
+          action="https://formspree.io/f/myyrrgwn"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="poema_title"
+            id="poemaTitle"
+            value="Penecillo"
+          />
+          <input
+            class="input-type"
+            id="nameInput"
+            type="text"
+            name="name"
+            placeholder="Digita tu nombre"
+          />
+          <button
+            class="button"
+            id="button"
+            onclick="openPopup2()"
+            type="submit"
+          >
+            Hormiguear Poema
+          </button>
+        </form>
+      </div>
+      <div class="popup2" id="popup2">
+        <h2 class="titulos titulo-form">Gracias</h2>
+        <p class="cantidad cantidad-form">por haber homrigueado el poema</p>
+        <button class="button" id="button" onclick="closePopup2()">
+          Salir
+        </button>
+      </div>
+      <br />
+      <a href="/Pages/poemarios/Fermentado en los dedos.html">
+        <button class="button arrow">
+          <svg class="icon icon--white">
+            <use
+              xlink:href="/images/sprite3.svg#reshot-icon-left-arrow-VCGUT7EKR3"
+            ></use>
+          </svg>
+        </button>
+      </a>
+    </section>
+    <script>
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          // Evitar el comportamiento predeterminado del formulario
+          event.preventDefault();
+
+          // Obtener los datos del formulario
+          const formData = new FormData(this);
+
+          // Realizar la petición AJAX
+          fetch(this.getAttribute("action"), {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          })
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error("Network response was not ok");
+              }
+              return response.json();
+            })
+            .then((data) => {
+              // Manejar la respuesta del servidor
+              console.log(data);
+
+              document.getElementById("nameInput");
+            })
+            .catch((error) => {});
+        });
+    </script>
+    <script>
+      let popup = document.getElementById("popup");
+      let popup2 = document.getElementById("popup2");
+
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function openPopup2() {
+        // Obtiene el valor del input
+        let nameInput = document.getElementById("nameInput").value;
+
+        // Verifica si el input está vacío
+        if (nameInput.trim() === "") {
+          // Si está vacío, muestra un mensaje de error o realiza la acción necesaria
+          alert("Por favor, ingresa tu nombre.");
+        } else {
+          // Si no está vacío, continúa con la acción
+          popup2.classList.add("open-popup2");
+        }
+      }
+      function closePopup2() {
+        popup2.classList.remove("open-popup2");
+        popup.classList.remove("open-popup");
+      }
+    </script>
+
+    <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      function preventCollapse(event) {
+        event.stopPropagation(); // Evita que el evento se propague hacia arriba
+      }
+    </script>
+  </body>
+</html>
