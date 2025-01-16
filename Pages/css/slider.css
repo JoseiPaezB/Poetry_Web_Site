@@ -32,6 +32,10 @@
   /* Slider styles */
   .poemass-22{
     border:10px solid #fff !important;
+}.options{
+  margin-top:-3rem;
+  justify-content:center; 
+  overflow: hidden !important;
 }
   .slider-container {
     padding: 10px 0;

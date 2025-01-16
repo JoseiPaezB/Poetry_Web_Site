@@ -159,6 +159,10 @@ a{
 
 }.poemass-22{
     border:10px solid #fff !important;
+}.options{
+    margin-top:-3rem;
+    justify-content:center; 
+    overflow: hidden !important;
 }
 
 .object__text,.about{

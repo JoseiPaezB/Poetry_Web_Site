@@ -314,7 +314,13 @@ body{
     }
     .poemass-22{
         border:5px solid #fff !important;
+    }.options{
+        margin-top:-3rem;
+         
+        justify-content:center; 
+        overflow: hidden !important;
     }
+    
 .titulos-populares,.cantidad,.imagenes { 
     opacity:1; 
     transition: opacity 0.5s ease; /* Agrega una transición suave */ 
@@ -382,6 +388,8 @@ body{
         
     }.demi{
         padding-left:2rem !important;
+    }.options{
+        margin-right:10rem !important;
     }
 }
 .biografia{

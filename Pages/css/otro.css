@@ -438,6 +438,7 @@ body{
 .options{
     margin-top:-3rem;
     justify-content:center; 
+    overflow: hidden !important;
 }.button-contact{
     margin-top:20rem !important; 
 }
