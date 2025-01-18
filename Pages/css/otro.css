@@ -367,9 +367,7 @@ body{
     height:30px; 
 }
 
-.icon--white{
-    fill:black;
-}
+
 
 .icon-container{
     margin-top:-10rem;
@@ -435,6 +433,10 @@ body{
     width:70% !important;  
 
 }
+.icon--white {
+    background: white !important;
+    stroke: white; /* Optional, for borders or outlines */
+  }
 .options{
     margin-top:-3rem;
     justify-content:center; 
@@ -462,7 +464,7 @@ body{
     margin-top:0rem; 
     font-size: 1rem ;
     color:#0b0b0b;
-    padding-left:3rem; 
+    padding-left:2rem; 
     padding-right:2rem; 
 }.titulos{
     font-size: 1.8rem ;
@@ -589,5 +591,6 @@ body{
     font-size: 12px;       /* Tamaño de la fuente */
     padding: 2px 5px;      /* Espaciado interno */
     border-radius: 5px;    /* Bordes redondeados */
-    margin-left: 10px;     /* Separación del texto */
+     
+    border:1px solid #fff !important;    /* Separación del texto */
   }
