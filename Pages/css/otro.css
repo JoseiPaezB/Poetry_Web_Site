@@ -177,6 +177,13 @@ body{
     color:#000; 
     display: flex;
 }
+.carousel-item2 h2,p{
+    margin-top:2rem; 
+   align-content:center;  
+    justify-content:center;
+    color:#000; 
+    display: flex;
+}
 .container{
     max-width:1140px; 
     margin: 0 auto; 
@@ -593,4 +600,138 @@ body{
     border-radius: 5px;    /* Bordes redondeados */
      
     border:1px solid #fff !important;    /* Separación del texto */
+  }
+
+  /* Add this to your existing CSS */
+/* Add this to your existing CSS */
+.custom-alert {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.7);
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    min-width: 300px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    
+  }
+  
+  .custom-alert.show {
+    opacity: 1;
+    visibility: visible;
+    background:url(https://i.makeagif.com/media/3-07-2018/sWmlMp.gif);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  
+  .alert-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+  }
+  
+  .alert-message {
+    font-family: 'JetBrains Mono', monospace;
+    color: #4a4a4a;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .alert-button {
+    font-family: 'JetBrains Mono', monospace;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .alert-button:hover {
+    background: #333;
+    transform: translateY(-1px);
+  }
+  
+  .alert-button:active {
+    transform: translateY(0);
+  }
+  
+  .alert-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+    transition: opacity 0.2s ease;
+  }
+  
+  .alert-close:hover {
+    opacity: 1;
+  }
+  
+  .alert-close::before,
+  .alert-close::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 16px;
+    background-color: #1a1a1a;
+    transform-origin: center;
+  }
+  
+  .alert-close::before {
+    transform: rotate(45deg);
+  }
+  
+  .alert-close::after {
+    transform: rotate(-45deg);
+  }
+  
+  .alert-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .alert-overlay.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
