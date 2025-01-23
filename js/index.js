@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       showCustomAlert(
         'Advertencia',
-        'Este poemario tiene contenido sensible y soes',
+        'Este poemario tiene contenido sensible y soez',
         fermentadoLink.href
       );
     });
